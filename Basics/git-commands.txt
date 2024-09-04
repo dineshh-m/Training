@@ -1,0 +1,20 @@
+1. git init
+2. git add .
+3. git commit -m "commit message"
+4. git branch
+5. git branch -D delete-branch-name
+6. git switch branchname
+7. git log
+8. git log --oneline
+9. git amend
+10. git restore
+11. git restore --cached
+12. git rm
+13. git rm --cached
+14. git show
+15. git remote add remote-name
+15. git remote rename old-name new-name
+16. git remote remove remote-name
+17. git push -u origin main
+17. git pull
+18. git fetch
