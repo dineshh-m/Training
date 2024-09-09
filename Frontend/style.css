@@ -1,7 +1,163 @@
-p {
-
+:root {
+    --body-bg: #F3F3FE;
+    --bg: #FFFFFF;
+    --fg: #171717;
+    --fg: #555252;
+    --fg: #4c4e52;
+    --light: #817b7b;
+    /* --gray: #999; */
+    --gray: #d3c8c8;
+    --light-gray: #cec9c9;
 }
 
-p::after {
-    content: 'after'
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+/* Utility classes  */
+
+.mx-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.light {
+    color: var(--light);
+}
+
+.line {
+    background: var(--gray);
+    height: 1px;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+html,
+body {
+    background-color: var(--body-bg);
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        /* text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; */
+    }
+
+.sm-input {
+    border: 1px solid var(--light-gray);
+    /* outline: 1px solid var(--gray); */
+    padding: .5rem 1rem;
+    width: 20rem;
+    font-size: 1.2rem;;
+    color: var(--fg)
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.flex {
+    display: flex;
+    gap: 2rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.block {
+    display: block;
+}
+
+/* Generic styling starts */
+
+main {
+    background-color: var(--bg);
+    /* background-color: lime; */
+    color: var(--fg);
+    margin: 2rem 10rem;
+    padding: 2rem;
+    width: max-content;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+}
+
+header {
+    padding: 2rem;
+}
+
+.data {
+    width: full;
+    padding: 2rem 0;
+}
+
+label.label-blk {
+    display: block;
+    margin: 1rem 0;
+}
+
+.form-group {
+    margin: 1.5rem 0;
+}
+
+.empty-height {
+    height: 3rem;
+}
+
+input {
+    border-radius: 8px;
+    outline: none;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: .75rem 4rem;
+    background-color: #16a34a;
+    background-color: #22c55e;
+    color: white;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 100ms ease;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #22c55e;
+    background-color: #16a34a;
+}
+
+textarea {
+    outline: none;
+}
+
+.after {
+    position: relative;
+}
+
+.after-label::after {
+    display: block;
+    position: relative;
+    z-index: 999;
+    content: attr(data-label);
+    /* position: absolute; */
+    margin-top: .5rem;
+    font-size: .75rem;
+}
+
+select {
+    background-color: var(--bg);
+    outline: none;
+    border-radius: 8px;
 }

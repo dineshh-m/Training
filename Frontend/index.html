@@ -1,15 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Data Sheet</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <div>
-    <h2>Helo</h2>
-    <p>This is some text</p>
-   </div> 
-</body>
-</html>
+    <main>
+        <header>
+            <h1>Personal Data Sheet</h1>
+            <p class="light strong">Enter details on the form below</p>
+        </header>
+        <div class="line"></div>
+        <section class="data">
+            <form action="">
+
+                <div class="form-group">
+                    <label for="name" class="strong label-blk">Name</label>
+                    <div class="flex">
+                        <div class="inline after-label" data-label="Firstname">
+                            <input type="text" class="sm-input rounded">
+                        </div>
+                        <div class="inline after-label" data-label="Lastname">
+                            <input type="text" name="last-name" class="sm-input rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <label for="name" class="strong label-blk">Mobile Number</label>
+                        <input type="text" class="sm-input rounded" placeholder="(000) 000-0000">
+                    </div>
+                    <div>
+                        <label for="name" class="strong label-blk">E-mail</label>
+                        <div class="inline after-label" data-label="example@example.com">
+                            <input type="email" class="sm-input rounded" placeholder="example@example.com">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="empty-height"></div>
+                
+                <div class="form-group after-label" data-label="Street Address">
+                    <label for="address" class="label-blk strong">Address</label>
+                    <input type="text" class="w-full sm-input block">
+                </div>
+                
+                
+                <div class="form-group after-label" data-label="Address 2">
+                    <label for="address" class="label-blk strong"></label>
+                    <input type="text" class="w-full sm-input block">
+                
+                </div>
+                
+                <div class="flex">
+                    <div class="after-label" data-label="City">
+                        <input type="text" class="sm-input rounded">
+                    </div>
+                    <div class="after-label" data-label="State / Province">
+                        <input type="text" class="sm-input rounded">
+                    </div>
+                </div>
+
+
+                <div class="flex form-group">
+                    <div class="after-label" data-label="Postal / Zip Code">
+                        <input type="text" class="sm-input rounded">
+                    </div>
+                    <div class="after-label" data-label="Country">
+                        <select name="country" class="sm-input">
+                            <option value="uk">United Kingdom</option>
+                            <option value="us">USA</option>
+                            <option value="in">India</option>
+                            <option value="ca">Canada</option>
+                            <option value="jp">Japan</option>
+                            <option value="ch">China</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="flex">
+                    <div>
+                        <label for="name" class="strong label-blk">Gender</label>
+                        <input type="text" class="sm-input rounded">
+                    </div>
+                    <span>
+                        <label for="name" class="strong label-blk">Birth Date</label>
+                        <input type="date" class="sm-input rounded">
+                    </span>
+                </div>
+
+
+                
+                <div class="empty-height"></div>
+                <div class="line"></div>
+                
+                
+                <div class="flex">
+                    <span>
+                        <label for="name" class="strong label-blk">Start Date</label>
+                        <input type="date" class="sm-input rounded">
+                    </span>
+                    <span>
+                        <label for="name" class="strong label-blk">Title</label>
+                        <input type="text" class="sm-input rounded">
+                    </span>
+                </div>
+                
+                <label for="addition-info" class="strong label-blk">Additional Information</label>
+                <textarea name="addition-info" rows="10" class="sm-input w-full rounded"></textarea>
+                
+                <div class="line mx-2"></div>
+                
+                <div class="submit">
+                    <input type="submit" value="Submit" class="submit-btn">
+                </div>
+                </form>
+                </section>
+                </main>
+                </body>
+                
+                </html>
