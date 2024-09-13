@@ -1,0 +1,9 @@
+.btn-sm {
+  width: max-content;
+}
+
+.task-item {
+  margin: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+}

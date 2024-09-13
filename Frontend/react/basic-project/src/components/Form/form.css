@@ -1,0 +1,26 @@
+.form-group {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group > label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(82, 76, 76);
+}
+
+.form-group > input {
+  font-size: 0.9rem;
+  width: 20rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px #ccc solid;
+}
+
+.error-message {
+  font-size: 0.7rem;
+  color: red;
+}

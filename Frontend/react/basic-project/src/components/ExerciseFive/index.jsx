@@ -1,21 +1,34 @@
-import { useState } from "react";
+import { useReducer, useState } from "react";
 import "./exercise-five.css";
 
+function reducer(state, action) {
+  switch (action.type) {
+    case "INCREMENT":
+      return state + 1;
+    case "DECREMENT":
+      return state - 1;
+    default:
+      return state;
+  }
+}
+
 export default function ExerciseFive() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
+  const [count, dispatch] = useReducer(reducer, 0);
+
   const handleIncrementClick = () => {
     if (count >= 25) {
       return;
     }
 
-    setCount(count + 1);
+    dispatch({ type: "INCREMENT" });
   };
 
   const handleDecrementClick = () => {
     if (count <= 0) {
       return;
     }
-    setCount(count - 1);
+    dispatch({ type: "DECREMENT" });
   };
   return (
     <>
