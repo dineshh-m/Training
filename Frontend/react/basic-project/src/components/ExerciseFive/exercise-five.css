@@ -1,0 +1,8 @@
+.count {
+  margin: 1rem 0;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}

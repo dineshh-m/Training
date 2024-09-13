@@ -1,0 +1,10 @@
+.card {
+  border: 1px #ccc solid;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 2rem;
+}
+
+.heading {
+  margin: 1rem 0;
+}
